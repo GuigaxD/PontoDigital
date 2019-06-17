@@ -1,0 +1,172 @@
+﻿'@{
+    var user = (string) ViewData["User"];
+}
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <title>Ponto Digital</title>
+    </head>
+    <header class="topo container">
+        <div class="conteudo_topo content">
+            <nav class="menu" id="menu_principal">
+                <ul>
+                    <li><a asp-controller="Home" asp-action="Index" class="active">Home</a></li>
+                    <li><a href='@Url.Action("Index", "Home")#sobre'>Sobre</a></li>
+                    <li><a href='@Url.Action("Index", "Home")#Planos'>Planos</a></li>
+                    <li><a href='@Url.Action("Index", "Home")#Produtos'>Produtos</a></li>
+                    <li><a href='@Url.Action("Index", "Home")#Localização'>Localização</a></li>
+                    <li><a href='@Url.Action("Index", "Home")#Depoimentos'>Depoimentos</a></li>
+                    <li><a href='@Url.Action("Index", "Home")#Contatos'>Contatos</a></li>
+                    @if(string.IsNullOrEmpty(user))
+                    {
+                    <li><a id="bt_login" asp-controller="Cliente" asp-action="Login">Login/Cadastro</a></li>
+                    }else{
+                    <li><a id="bt_logout" asp-controller="Cliente" asp-action="Logout">Logout</a></li>
+                    }
+                </ul>
+            </nav>    
+        </div>
+    </header>
+
+        </header>
+        <body>    
+        <section id="sobre">
+            <h2>Sobre</h2>
+                <div id="conteudo_sobre">
+                       <div class="texto_sobre">
+                          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id ut, deleniti minus in, error,
+                            reprehenderit incidunt quibusdam placeat amet assumenda dolores odit beatae rem ipsam sit voluptatum voluptatibus
+                            >Lorem ipsum dolor sit amet consectetur adipisicing elit. Id ut, deleniti minus in, error,
+                            reprehenderit incidunt quibusdam placeat amet assumenda dolores odit beatae rem ipsam sit voluptatum voluptatibus>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id ut, deleniti minus in, error,
+                            reprehenderit incidunt quibusdam placeat amet assumenda dolores odit beatae rem ipsam sit voluptatum voluptatibus>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id ut, deleniti minus in, error,
+                            reprehenderit incidunt quibusdam placeat amet assumenda dolores odit beatae rem ipsam sit voluptatum voluptatibus>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id ut, deleniti minus in, error,
+                            reprehenderit incidunt quibusdam placeat amet assumenda dolores odit beatae rem ipsam sit voluptatum voluptatibus>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id ut, deleniti minus in, error,
+                            reprehenderit incidunt quibusdam placeat amet assumenda dolores odit beatae rem ipsam sit voluptatum voluptatibus>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id ut, deleniti minus in, error,
+                            reprehenderit incidunt quibusdam placeat amet assumenda dolores odit beatae rem ipsam sit voluptatum voluptatibus>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id ut, deleniti minus in, error,
+                            reprehenderit incidunt quibusdam placeat amet assumenda dolores odit beatae rem ipsam sit voluptatum voluptatibus>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id ut, deleniti minus in, error,
+                            reprehenderit incidunt quibusdam placeat amet assumenda dolores odit beatae rem ipsam sit voluptatum voluptatibus
+                            </div>
+                        </section>
+        <section id="Planos">
+            <h2>Planos</h2>
+            <div class="conteudo_planos content">
+                    <article class="box">
+                        <h3>1ºPlano</h3>
+                        <h2>R$29,90</h2>
+                        
+                            <form>
+                            <input type="submit" value="Adquirir" class="btn btn-primary">
+                            </form>
+                    </article>
+                    <article class="box">                      
+                        <h3>2ºPlano</h3>
+                        <h2>R$149,90</h2>
+                        
+                            <form>
+                            <input type="submit" value="Adquirir" class="btn btn-primary">
+                            </form>
+                    </article>
+                    <article class="box">
+                        <h3>3ºPlano</h3>
+                        <H2>R$299,90</H2>
+                       <form>
+                            <input type="submit" value="Adquirir" class="btn btn-primary">
+                            </form>
+                    </article>
+                    <article class="box">
+                        <h3>4ºPlano</h3>
+                        <H2>A Definir!</H2>
+                         <form>
+                            <input type="submit" value="Adquirir" class="btn btn-primary">
+                            </form>
+                    </article>
+                    </div>
+        </section>
+        <section id="Produtos">
+            <h2>Produtos</h2>
+            <article class="box_1">
+            </article>
+            <article class="text_box">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas explicabo nostrum
+                            earum repellendus, distinctio esse nihil suscipit illo eveniet molestias dolorem!
+                            Perferendis natus architecto tenetur eveniet magnam soluta sint explicabo?</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas explicabo nostrum
+                                    earum repellendus, distinctio esse nihil suscipit illo eveniet molestias dolorem!
+                                    Perferendis natus architecto tenetur eveniet magnam soluta sint explicabo?</p>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas explicabo nostrum
+                                            earum repellendus, distinctio esse nihil suscipit illo eveniet molestias dolorem!
+                                            Perferendis natus architecto tenetur eveniet magnam soluta sint explicabo?</p>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas explicabo nostrum
+                                                    earum repellendus, distinctio esse nihil suscipit illo eveniet molestias dolorem!
+                                                    Perferendis natus architecto tenetur eveniet magnam soluta sint explicabo?</p>
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas explicabo nostrum
+                                                            earum repellendus, distinctio esse nihil suscipit illo eveniet molestias dolorem!
+                                                            Perferendis natus architecto tenetur eveniet magnam soluta sint explicabo?</p>
+            </article>
+            <article class="text_box">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas explicabo nostrum
+                            earum repellendus, distinctio esse nihil suscipit illo eveniet molestias dolorem!
+                            Perferendis natus architecto tenetur eveniet magnam soluta sint explicabo?</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas explicabo nostrum
+                                    earum repellendus, distinctio esse nihil suscipit illo eveniet molestias dolorem!
+                                    Perferendis natus architecto tenetur eveniet magnam soluta sint explicabo?</p>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas explicabo nostrum
+                                            earum repellendus, distinctio esse nihil suscipit illo eveniet molestias dolorem!
+                                            Perferendis natus architecto tenetur eveniet magnam soluta sint explicabo?</p>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas explicabo nostrum
+                                                    earum repellendus, distinctio esse nihil suscipit illo eveniet molestias dolorem!
+                                                    Perferendis natus architecto tenetur eveniet magnam soluta sint explicabo?</p>
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas explicabo nostrum
+                                                            earum repellendus, distinctio esse nihil suscipit illo eveniet molestias dolorem!
+                                                            Perferendis natus architecto tenetur eveniet magnam soluta sint explicabo?</p>
+            </article>
+            <article class="box_1">
+            </article>
+        </section>
+        <section id="Localização">
+            <h2>Localização</h2>
+            <div class="conteudo_local">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.889023842493!2d-46.648335684407286!3d-23.536493566560996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5843deb99025%3A0xb23619858bc7e63e!2sEscola+SENAI+de+Inform%C3%A1tica!5e0!3m2!1spt-BR!2sbr!4v1552582398503" width="600" height="450" frameborder="0" auto style="border:0" allowfullscreen></iframe>
+            </section>
+        </div>
+        <section id="Depoimentos">
+            <h2>Depoimentos</h2>
+            <div class="conteudo_Depor_container">
+            <form method="POST" action="Home/RegistrarDepoimentos">
+                <label for="nome">Nome:</label>
+                <br />
+                <input name="nome" id="nome" type="name" maxlength="50" minlength="1" required/>
+                <br />
+
+                <label for="sobrenome">Sobrenome:</label>
+                <br />
+                <input name="sobrenome" id="sobrenome" type="text" maxlength="50" minlength="1" required/>
+                <br />
+
+                <label for="email">Email:</label>
+                <br />
+                <input name="email" id="email" type="email" required/>
+                <br />
+
+                <label for="mensagem">Mensagem:</label>  
+                <br />
+                <textarea name="mensagem" id="Mensagem" cols="100" rows="15"></textarea>
+                <br />
+                    <input type="submit" value="Enviar">
+                </form>
+                
+            </div>        
+        </section>
+            <script>
+                function botao_menu() {
+                    var m = document.getElementById("menu_principal");
+                    if (m.style.display == "none") {
+                        m.style.display = "block";
+                    } else {
+                        m.style.display = "none";
+                    }
+                }   
+            </script>
+</body>
+</html>
